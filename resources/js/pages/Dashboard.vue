@@ -61,7 +61,6 @@
 import { ref, onMounted } from 'vue';
 import { usePage } from '@inertiajs/vue3';
 import Chart from 'chart.js/auto';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Users, UserCheck, BookOpen, DollarSign } from 'lucide-vue-next';
 
 const stats = ref([
@@ -91,7 +90,7 @@ const loadDashboardData = async () => {
     } catch (error) {
         console.error('Error loading dashboard data:', error);
     }
-    
+
 };
 
 const loadCharts = async () => {
