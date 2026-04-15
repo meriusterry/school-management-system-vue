@@ -32,6 +32,8 @@ const router = createRouter({
     routes,
 });
 
+
+
 router.beforeEach((to, from, next) => {
     const token = localStorage.getItem('token');
     if (!token && to.name !== 'login') {

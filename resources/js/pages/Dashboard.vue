@@ -91,6 +91,7 @@ const loadDashboardData = async () => {
     } catch (error) {
         console.error('Error loading dashboard data:', error);
     }
+    
 };
 
 const loadCharts = async () => {
